@@ -16,22 +16,22 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 </p>
 
 
-## Open Closed Principle
+### Open Closed Principle
 <p align="center">
   <i>A module should be open for extension but closed for modification.</i>
 </p>
 
-## LISKOV Principle
+### LISKOV Principle
 <p align="center">
   <i>Subclasses should be substitutable for their base classes.</i>
 </p>
 
-## Interface Segregation Principle
+### Interface Segregation Principle
 <p align="center">
   <i>Many client specific interfaces are better than one general purpose interface</i>
 </p>
 
-## Dependecy Inversion Principle
+### Dependecy Inversion Principle
 <p align="center">
   <i>Depend upon Abstractions. Do not depend upon concretions.</i>
 </p>
