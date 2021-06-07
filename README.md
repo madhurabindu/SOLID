@@ -16,7 +16,13 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 ### Why use this principle
 
 ## Open Closed Principle
-<p align="center"><b>A module should be open for extension but closed for modification.</b></p>
+<p align="center">
+  <b>A module should be open for extension but closed for modification.</b>
+  <i>A module should be open for extension but closed for modification.</i>
+  <mark>A module should be open for extension but closed for modification.</mark>
+  <strong>A module should be open for extension but closed for modification.</strong>
+  <em>A module should be open for extension but closed for modification.</em>
+</p>
 
 ## LISKOV Principle
 
