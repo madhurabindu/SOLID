@@ -11,24 +11,29 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 5. **D**ependency Inversion
 
 ## Single Responsiblity Principle
-### Explanation
+<p align="center">
+  <i>A class should have one, and only one, reason to change..</i>
+</p>
 
-### Why use this principle
 
 ## Open Closed Principle
 <p align="center">
-  <b>A module should be open for extension but closed for modification.</b>
   <i>A module should be open for extension but closed for modification.</i>
-  <mark>A module should be open for extension but closed for modification.</mark>
-  <strong>A module should be open for extension but closed for modification.</strong>
-  <em>A module should be open for extension but closed for modification.</em>
 </p>
 
 ## LISKOV Principle
-
+<p align="center">
+  <i>Subclasses should be substitutable for their base classes.</i>
+</p>
 ## Interface Segregation Principle
+<p align="center">
+  <i>Many client specific interfaces are better than one general purpose interface</i>
+</p>
 
 ## Dependecy Inversion Principle
+<p align="center">
+  <i>Depend upon Abstractions. Do not depend upon concretions.</i>
+</p>
 
 ## Resources
 - https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf
