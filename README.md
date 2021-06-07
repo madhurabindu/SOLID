@@ -9,7 +9,9 @@
 4. **I**nterface Segregation
 5. **D**ependency Inversion
 
-### Single Responsiblity
+### Single Responsiblity Principle
+Markup :  - - - -
+
 
 ![](./structuralpatterns.jpg)
 
