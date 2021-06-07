@@ -21,6 +21,8 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
   <i>A module should be open for extension but closed for modification.</i>
 </p>
 
+We should write our mod- ules so that they can be extended, without requiring them to be modified. In other words, we want to be able to change what the modules do, without changing the source code of the modules.
+
 ### LISKOV Principle
 <p align="center">
   <i>Subclasses should be substitutable for their base classes.</i>
