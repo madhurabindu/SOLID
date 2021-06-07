@@ -3,11 +3,11 @@
 ## Overview
 
 ## S O L I D
-1. ***S***ingle Responsibility
-2. Open/Closed
-3. Liskov Substitution
-4. Interface Segregation
-5. Dependency Inversion
+1. **S**ingle Responsibility
+2. **O**pen/Closed
+3. **L**iskov Substitution
+4. **I**nterface Segregation
+5. **D**ependency Inversion
 
 ### Single Responsiblity
 
