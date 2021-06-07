@@ -1,9 +1,9 @@
-# SOLID Design Principles
+# Design Principles
 
 ## Overview
 SOLID design principles help us create code that is easy to maintain, easy to extend, easy to read / understand as the software evolves and grown in size.
 
-## S O L I D
+# S O L I D Principles
 1. **S**ingle Responsibility
 2. **O**pen/Closed
 3. **L**iskov Substitution
@@ -34,6 +34,16 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 <p align="center">
   <i>Depend upon Abstractions. Do not depend upon concretions.</i>
 </p>
+
+#Component Principles
+- Cohesion Principles
+  - (REP) The Release Reuse Equivalence Principle
+  - (CCP) The Common Closure Principle
+  - (CRP) The Common Reuse Principle
+- Coupling Principles
+  - (ADP) The Acyclic Dependencies Principle
+  - (SDP) The Stable Dependencies Principle
+  - (SAP) The Stable Abstractions Principle
 
 ## Resources
 - https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf
