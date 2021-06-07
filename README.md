@@ -38,3 +38,4 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 ## Resources
 - https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf
 - https://www.baeldung.com/solid-principles
+- https://www.oodesign.com/single-responsibility-principle.html
