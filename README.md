@@ -3,14 +3,14 @@
 ## Overview
 SOLID design principles help us create code that is easy to maintain, easy to extend, easy to read / understand as the software evolves and grown in size.
 
-# S O L I D Principles
+## S O L I D Principles
 1. **S**ingle Responsibility
 2. **O**pen/Closed
 3. **L**iskov Substitution
 4. **I**nterface Segregation
 5. **D**ependency Inversion
 
-## Single Responsiblity Principle
+### Single Responsiblity Principle
 <p align="center">
   <i>A class should have one, and only one, reason to change..</i>
 </p>
@@ -25,6 +25,7 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
 <p align="center">
   <i>Subclasses should be substitutable for their base classes.</i>
 </p>
+
 ## Interface Segregation Principle
 <p align="center">
   <i>Many client specific interfaces are better than one general purpose interface</i>
@@ -35,7 +36,7 @@ SOLID design principles help us create code that is easy to maintain, easy to ex
   <i>Depend upon Abstractions. Do not depend upon concretions.</i>
 </p>
 
-#Component Principles
+## Component Principles
 - Cohesion Principles
   - (REP) The Release Reuse Equivalence Principle
   - (CCP) The Common Closure Principle
