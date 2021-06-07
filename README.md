@@ -10,7 +10,7 @@
 5. **D**ependency Inversion
 
 ### Single Responsiblity Principle
-:  - - - -
+- - - -
 
 
 ![](./structuralpatterns.jpg)
