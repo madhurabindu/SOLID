@@ -4,7 +4,19 @@ The design by contract method of interface contract design was developed for des
 
 1. Separate basic queries from derived queries.
 
- Derived queries can be specified in terms of basic queries. A derived query is a query that uses other queries to obtain an ultimate answer. A basic query goes directly after the data source to get the data. Consider a bank account service that supports all the account activity for a bank, including checking and savings accounts. If a client needs to get the balance of the account, it calls the GetBalance service. This method inquires about the account holder's checking and savings account balances, sums them, and returns the result. If all the client needs is the total balance, there would never be a problem. If, however, a client needs just the checking account balance, the service will not fulfill this need. Therefore, it is necessary to separate the “basic” queries of GetBalance for savings and checking accounts from the composite derived query for both accounts. A correct design would consist of three service interfaces: GetBalance on a checking account service, on a savings account service, and on a composite BankAccount service. The composite derived service method would use the basic queries to derive the data on the client's behalf.
+ Derived queries can be specified in terms of basic queries. A derived query is a query that uses other queries to obtain an ultimate answer. A basic query goes directly after the data source to get the data. 
+
+Consider a bank account service that supports all the account activity for a bank, including checking and savings accounts.
+ If a client needs to get the balance of the account, it calls the GetBalance service. 
+This method inquires about the account holder's checking and savings account balances, sums them, and returns the result. 
+If all the client needs is the total balance, there would never be a problem. 
+If, however, a client needs just the checking account balance, the service will not fulfill this need. 
+
+Therefore, it is necessary to separate the “basic” queries of GetBalance for savings and checking accounts from the composite derived query for both accounts.
+
+ A correct design would consist of three service interfaces: GetBalance on a checking account service, on a savings account service, and on a composite BankAccount service. 
+
+The composite derived service method would use the basic queries to derive the data on the client's behalf.
 
 2. For each command, write a postcondition that specifies the value of every basic query.
 
