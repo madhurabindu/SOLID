@@ -40,17 +40,13 @@ Derived classes should be substitutable for their base classes. That is, a user 
 An overridden method of a subclass needs to accept the same input parameter values as the method of the superclass. That means you can implement less restrictive validation rules, but you are not allowed to enforce stricter ones in your subclass. 
 
 The return value of a method of the subclass needs to comply with the same rules as the return value of the method of the superclass. You can only decide to apply even stricter rules by returning a specific subclass of the defined return value, or by returning a subset of the valid return values of the superclass.
-
-#### Design by Contract. 
+ 
 In order to be substitut- able, the contract of the base class must be honored by the derived class.
-
-[DoC](./Designbycontract.md) prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
-
+- Design by Contract: [DoC](./Designbycontract.md) prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
 This can be summarised by the "three questions" that the designer must repeatedly answer in the contract:
-
-- What does the contract expect?
-- What does the contract guarantee?
-- What does the contract maintain?
+  - What does the contract expect?
+  - What does the contract guarantee?
+  - What does the contract maintain?
 
 Restating the LSP once again, this time in terms of the contracts, a derived class is substitutable for its base class if:
 1. Its preconditions are no stronger than the base class method.
