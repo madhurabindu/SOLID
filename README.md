@@ -44,7 +44,7 @@ The return value of a method of the subclass needs to comply with the same rules
 #### Design by Contract. 
 In order to be substitut- able, the contract of the base class must be honored by the derived class.
 
-It prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
+[DoC](./Designbycontract.md) prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
 
 This can be summarised by the "three questions" that the designer must repeatedly answer in the contract:
 
