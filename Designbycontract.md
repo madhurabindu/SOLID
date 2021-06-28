@@ -2,6 +2,18 @@
 
 The design by contract method of interface contract design was developed for designing the interfaces of classes, but the principles fit service interface design equally well, although with a different slant. Design by contract for interface design is based on six principles:
 
+The main principles of this model are threefold:
+
+1. Preconditions: 
+  - the client is obligated to meet a function's required preconditions before calling a function. 
+  - If the preconditions are not met, then the function may not operate correctly.
+2. Postconditions: 
+  - the function guarantees that certain conditions will be met after it has finished its work.
+  - If a postcondition is not met, then the function did not complete its work correctly.
+3. Class invariant: 
+  - constraints that every instance of the class must satisfy. 
+  - This defines the state that must hold true for the class to operate according to its design.
+
 #### 1. Separate basic queries from derived queries.
 
 Derived queries can be specified in terms of basic queries. A derived query is a query that uses other queries to obtain an ultimate answer. A basic query goes directly after the data source to get the data. 
