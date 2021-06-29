@@ -1,6 +1,6 @@
 # Architectyre Styles
 
-## Pipes and filters
+## 1. Pipes and filters
 
 
 ### Overview
@@ -25,13 +25,13 @@ traditionally compilers have been viewed as a pipeline systems (though the phase
 
 - lastly, they may be hampered by having to maintain correspondences between two separate, but related streams. Third, depending on the implementation, they may force a lowest common denominator on data transmission, resulting in added work for each filter to parse and unparse its data. This, in turn, can lead both to loss of performance and to increased complexity in writing the filters themselves.
 
-## Object Oriented organization
+## 2. Object Oriented organization
 
 In this style data representations and their associated primitive operations are encapsulated in an abstract data type or object. The components of this style are the objects—or, instances of the abstract data types. Objects interact through function and procedure invocations.
 
 object is responsible for preserving the integrity of its representation (usually by maintaining some invariant over it) the representation is hidden from other objects.
 
-## Event based
+## 3. Event based
 
 ### Overview
 Traditionally, in a system in which the component interfaces provide a collection of procedures and functions, components interact with each other by explicitly invoking those routines
@@ -61,7 +61,7 @@ The primary disadvantage of implicit invocation is that
 
 
 
-## layered archutecture
+## 4. Layered archutecture
 
 ### Overview
 A layered system is organized hierarchically, each layer providing service to the layer above it and serving as a client to the layer below. In some layered systems inner layers are hidden from all except the adjacent outer layer, except for certain functions carefully selected for export. Thus in these systems the components implement a virtual machine at some layer in the hierarchy. (In other layered systems the layers may be only partially opaque.) The connectors are defined by the protocols that determine how the layers will interact. Topological constraints include limiting interactions to adjacent layers.
@@ -75,18 +75,18 @@ First, they support design based on increasing levels of abstraction. This allow
 But layered systems also have disadvantages. Not all systems are easily structured in a layered fashion. (We will see an example of this later in the case studies.) And even if a system can logically be structured as layers, considerations of performance may require closer coupling between logically high-level functions and their lower-level implementations. Additionally, it can be quite difficult to find the right levels of abstraction. This is particularly true for standardized layered models. One notes that the communications community has had some difficulty mapping existing protocols into the ISO framework: many of those protocols bridge several layers.
 
 
-## Repositories
+## 5. Repositories
 
 In a repository style there are two quite distinct kinds of components: a central data structure represents the current state, and a collection of independent components operate on the central data store. Interactions between the repository and its external components can vary significantly between systems.
 The choice of control discipline leads to major subcategories. If the types of transactions in an input stream of transactions trigger selection of processes to execute, the repository can be a traditional database. If the current state of the central data structure is the main trigger of selecting processes to execute, the repository can be a blackboard.
 
-## Distributed systems 
+## 6. Distributed systems 
 
 have developed a number of common organizations for multi-process systems. Some can be characterized primarily by their topological features, such as ring and star organizations. Others are better characterized in terms of the kinds of inter-process protocols that are used for communication (e.g., heartbeat algorithms).
 
 One common form of distributed system architecture is a “client-server” organization. In these systems a server represents a process that provides services to other processes (the clients). Usually the server does not know in advance the identities or number of clients that will access it at run time. On the other hand, clients know the identity of a server (or can find it out through some other server) and access it by remote procedure call.
 
-## State transition systems
+## 7. State transition systems
 
 A common organization for many reactive systems is the state transition system. These systems are defined in terms a set of states and a set of named transitions that move a system from one state to another.
 
