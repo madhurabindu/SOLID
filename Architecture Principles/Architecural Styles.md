@@ -1,15 +1,9 @@
-#### Catalog of architectural patterns
-- Three-tier
-- Multilayered architecture
-- Model–view–controller
-
 #### Domain Driven Design
 - Microkernel
 - Blackboard pattern
 - Sensor–controller–actuator
 - Presentation–abstraction–control
-- Catalog of architectural styles 
-- Structure
+- Model–view–controller
 
 #### Component-based
 - Monolithic application
