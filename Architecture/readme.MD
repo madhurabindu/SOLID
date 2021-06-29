@@ -50,9 +50,9 @@ not know what other tools (if any) are concerned with that event, or what they w
 - in user interfaces to separate presentation of data from applications that manage the data [26, 27], 
 - and by syntax-directed editors to support incremental semantic checking [28, 29
 
-### advantage
+### Advantage
 
-### disadvantage
+### Disadvantage
 
 The primary disadvantage of implicit invocation is that 
 - components relinquish control over the computation performed by the system. When a component announces an event, it has no idea what other components will respond to it. Worse, even if it does know what other components are interested in the events it announces, it cannot rely on the order in which they are invoked. Nor can it know when they are finished. 
@@ -61,16 +61,16 @@ The primary disadvantage of implicit invocation is that
 
 
 
-## 4. Layered archutecture
+## 4. Layered Architecture
 
 ### Overview
 A layered system is organized hierarchically, each layer providing service to the layer above it and serving as a client to the layer below. In some layered systems inner layers are hidden from all except the adjacent outer layer, except for certain functions carefully selected for export. Thus in these systems the components implement a virtual machine at some layer in the hierarchy. (In other layered systems the layers may be only partially opaque.) The connectors are defined by the protocols that determine how the layers will interact. Topological constraints include limiting interactions to adjacent layers.
 
-### advantage
+### Advantage
 
 First, they support design based on increasing levels of abstraction. This allows implementors to partition a complex problem into a sequence of incremental steps. Second, they support enhancement. Like pipelines, because each layer interacts with at most the layers below and above, changes to the function of one layer affect at most two other layers. Third, they support reuse. Like abstract data types, different implementations of the same layer can be used interchangeably, provided they support the same interfaces to their adjacent layers. This leads to the possibility of defining standard layer interfaces to which different implementors can build. (A good example is the OSI ISO model and some of the X Window System protocols.)
 
-### disadvantage
+### Disadvantage
 
 But layered systems also have disadvantages. Not all systems are easily structured in a layered fashion. (We will see an example of this later in the case studies.) And even if a system can logically be structured as layers, considerations of performance may require closer coupling between logically high-level functions and their lower-level implementations. Additionally, it can be quite difficult to find the right levels of abstraction. This is particularly true for standardized layered models. One notes that the communications community has had some difficulty mapping existing protocols into the ISO framework: many of those protocols bridge several layers.
 
@@ -90,5 +90,5 @@ One common form of distributed system architecture is a “client-server” orga
 
 A common organization for many reactive systems is the state transition system. These systems are defined in terms a set of states and a set of named transitions that move a system from one state to another.
 
-## Process control systems: 
+## 8. Process control systems: 
 Systems intended to provide dynamic control of a physical environment are often organized as process control systems. These systems are roughly characterized as a feedback loop in which inputs from sensors are used by the process control system to determine a set of outputs that will produce a new state of the environment.
