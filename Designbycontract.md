@@ -14,6 +14,13 @@ The main principles of this model are threefold:
   - constraints that every instance of the class must satisfy. 
   - This defines the state that must hold true for the class to operate according to its design.
 
+Design by Contract: DoC prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
+
+This can be summarised by the "three questions" that the designer must repeatedly answer in the contract:
+  - What does the contract expect?
+  - What does the contract guarantee?
+  - What does the contract maintain?
+
 #### 1. Separate basic queries from derived queries.
 
 Derived queries can be specified in terms of basic queries. A derived query is a query that uses other queries to obtain an ultimate answer. A basic query goes directly after the data source to get the data. 
@@ -34,15 +41,14 @@ The composite derived service method would use the basic queries to derive the d
 
  A postcondition specifies the effect of calling a feature of the service.
 
- For instance, a Withdraw command on a checking account service will guarantee that if the method succeeds, 
-the GetBalance query will return the previous balance minus the withdrawal amount.
+ For instance, a Withdraw command on a checking account service will guarantee that if the method succeeds, the GetBalance query will return the previous balance minus the withdrawal amount.
 
 #### 3. For every query command, decide on a suitable precondition.
 
  For methods that require multiple steps, specify the preconditions necessary for the multiple steps to succeed. 
 
-For instance, consider a credit-card validation sequence where the first step is a validation that the cardholder has not exceeded his or her credit limit for the transaction.
- The second method actually confirms the transaction. 
+For instance, consider a credit-card validation sequence where the first step is a validation that the cardholder has not exceeded his or her credit limit for the transaction. The second method actually confirms the transaction. 
+
 The precondition for the confirm transaction has with it a precondition that the validate transaction has already occurred.
 
 #### 4. For each derived query, write a postcondition that specifies what result will be returned in terms of one or more basic queries.
