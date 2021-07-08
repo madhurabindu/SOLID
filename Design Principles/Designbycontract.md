@@ -8,11 +8,11 @@ The main principles of this model are threefold:
     - the client is obligated to meet a function's required preconditions before calling a function. 
     - If the preconditions are not met, then the function may not operate correctly.
 2. Postconditions: 
-  - the function guarantees that certain conditions will be met after it has finished its work.
-  - If a postcondition is not met, then the function did not complete its work correctly.
+    - the function guarantees that certain conditions will be met after it has finished its work.
+    - If a postcondition is not met, then the function did not complete its work correctly.
 3. Class invariant: 
-  - constraints that every instance of the class must satisfy. 
-  - This defines the state that must hold true for the class to operate according to its design.
+    - constraints that every instance of the class must satisfy. 
+    - This defines the state that must hold true for the class to operate according to its design.
 
 Design by Contract: DoC prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. 
 
