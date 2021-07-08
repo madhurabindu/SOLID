@@ -5,8 +5,8 @@ The design by contract method of interface contract design was developed for des
 The main principles of this model are threefold:
 
 1. Preconditions: 
-  - the client is obligated to meet a function's required preconditions before calling a function. 
-  - If the preconditions are not met, then the function may not operate correctly.
+    - the client is obligated to meet a function's required preconditions before calling a function. 
+    - If the preconditions are not met, then the function may not operate correctly.
 2. Postconditions: 
   - the function guarantees that certain conditions will be met after it has finished its work.
   - If a postcondition is not met, then the function did not complete its work correctly.
